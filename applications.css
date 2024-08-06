@@ -1,0 +1,113 @@
+body {
+    font-family: Verdana;
+    text-align: center;
+    background-color: hsl(0, 0%, 83%);
+}
+#countLabel {
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: Helvetica;
+}
+#btnContainer {
+    text-align: center;
+}
+.buttons {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: hsl(214, 100%, 74%);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+.buttons:hover {
+    background-color: hsl(214, 100%, 56%);
+}
+#rollBtn {
+    font-size: 3em;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+#rollLabel {
+    font-size: 3em;
+}
+form {
+    background-color: hsl(0, 0%, 73%);
+    margin: auto;
+    max-width: 450px;
+    border-radius: 6px;
+    box-shadow: 6px 6px 8px;
+}
+#textBox {
+    width: 50%;
+    text-align: center;
+    font-size: 1.1em;
+    border:  2px solid hsl(214, 100%, 74%);
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+.labelTemp {
+    font-weight: bold;
+    
+}
+#convertBtn, #resultTemp {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    background-color: hsl(214, 100%, 74%);
+    border-radius: 5px;
+    color: white;
+}
+#diceContainer {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+#rollDiceBtn {
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(214, 100%, 74%);
+    color: white;
+    font-weight: bold;
+}
+#rollDiceBtn:hover {
+    background-color: hsl(214, 100%, 56%);
+}
+#rollDiceBtn:active {
+    background-color: hsl(4, 100%, 56%);
+}
+#diceIn {
+    font-size: 2rem;
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+#Choose {
+    border: solid;
+    max-width: 324px;
+    margin: auto;
+    border-radius: 6px;
+    background-color: black;
+}
+.rsp {
+    margin: 0px;
+    padding: 0px;
+}
+#res {
+    margin: auto;
+    max-width: 350px;
+    display: flex;
+    align-items: center;
+}
+#res span {
+    display: inline-block;
+    vertical-align: middle;
+}
+#computerChoice {
+    margin-left: 0px;
+    
+}
