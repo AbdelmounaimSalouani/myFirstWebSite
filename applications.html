@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="jdevIcon.ico">
+    <title>Counter program</title>
+    <link rel="stylesheet" href="applications.css">
+</head>
+<body>
+    <label id="countLabel">0</label><br>
+    <div id="btnContainer">
+        <button id="decreaseBtn" class="buttons">decrease</button>
+        <button id="resetBtn" class="buttons">reset</button>
+        <button id="increaseBtn" class="buttons">increase</button>
+    </div>
+    <hr style="height: 5px; background-color: black;">
+    <button id="rollBtn">roll</button><br>
+    <label id="rollLabel"><br></label>
+    <hr style="height: 5px; background-color: black;">
+    <label>guess a number between 0 and 100</label><br>
+    <input type="text" id="guessAnswer" style="width: 50px;"><br>
+    <button id="guess" style="width: 50px;">guess</button><br>
+    <label id="answer"><br></label>
+    <hr style="height: 5px; background-color: black;">
+    <form >
+        <h2>Temperature conversion</h2>
+        <input type="number" id="textBox" value="0"><br>
+
+        <input type="radio" id="toFahrenheit" name="unit">
+        <label for="toFahrenheit" class="labelTemp">Celcuis to Fahrenheit</label>
+        <input type="radio" id="toCelcius" name="unit">
+        <label for="toCelcius" class="labelTemp">Fahrenheit to Celcuis</label><br>
+
+        <button id="convertBtn" type="button" onclick="convert()">convert</button>
+        <p id="resultTemp">result</p>
+    </form>
+    <hr style="height: 5px; background-color: black; margin-top: 15px;">
+    <div id="diceContainer">
+        <h3> Dice Roller</h3>
+        <label for=""># of dice:</label>
+        <input id="diceIn" type="number" value="1" min="1" max="10">
+        <button id="rollDiceBtn" onclick="rollDice()">Roll Dice</button>
+        <div id="diceResult"></div>
+        <div id="diceImages"></div>
+    </div>
+    <hr style="height: 5px; background-color: black; margin-top: 15px;">
+
+
+    <div id="RockPapeScissor">
+        <h3>Rock, Paper, Scissors</h3>
+        <div id="Choose">
+            <button id="rock" class="rsp"><img src="images/R.png" alt="rock" width="100px"></button>
+            <button id="scissor" class="rsp"><img src="images/S.png" alt="scissor" width="100px" height="100px"></button>
+            <button id="paper" class="rsp"><img src="images/P.png" alt="paper" width="100px"></button>
+        </div>
+        <div id="finalResult">
+            <div id="res"><h3 style="display: inline-block;">You</h3>
+            <span id="userChoice"><img src="images/S.png" alt="scissor" width="100px" height="80px"></span>-
+            <span id="computerChoice"><img src="images/P.png" alt="scissor" width="100px" height="80px"></span>
+            <h3 id="co" style="display: inline-block;">Computer</h3></div>
+            <h3 id="winner">result</h3>
+        </div>
+    </div>
+
+
+    <script src="applications.js"></script>
+</body>
+</html>
